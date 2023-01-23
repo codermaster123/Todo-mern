@@ -14,5 +14,9 @@ app.use(express.static("static"))
 app.use("/",route)
 const port=8080;
 Connection();
+app.get("*",(req,res)=>{
+      res.sendFile(path.join(__dirname,"static/index.html"))
+});
+
 
 app.listen(port,()=>{ console.log("server is starting")}); 

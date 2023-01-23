@@ -7,7 +7,6 @@ const route = express.Router();
 route.post("/todos",addTodo);
 route.get("/todos",getAllTodos)
 route.get("/",(req,res)=>{
-  res.send("mcmvvmvmmc")
   
 });
 export default route;
